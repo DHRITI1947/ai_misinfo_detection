@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import numpy as np
 
-MODEL_DIR = "./model"
+MODEL_DIR = "distilbert-base-uncased-finetuned-sst-2-english"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_DIR)
